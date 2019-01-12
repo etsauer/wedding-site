@@ -44,15 +44,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <!-- SCIPTS -->
 
-<script src="common-js/jquery-3.1.1.min.js"></script>
+<script src="/js/jquery-3.1.1.min.js"></script>
 
-<script src="common-js/tether.min.js"></script>
+<script src="/js/tether.min.js"></script>
 
-<script src="common-js/bootstrap.js"></script>
+<script src="/js/bootstrap.js"></script>
 
-<script src="common-js/jquery.countdown.min.js"></script>
+<script src="/js/jquery.countdown.min.js"></script>
 
-<script src="common-js/jquery.fluidbox.min.js"></script>
+<script src="/js/jquery.fluidbox.min.js"></script>
 
 
-<script src="common-js/scripts.js"></script>
+<script src="/js/scripts.js"></script>

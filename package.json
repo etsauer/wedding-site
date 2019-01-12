@@ -1,0 +1,19 @@
+{
+  "name": "wedding-site",
+  "version": "1.0.0",
+  "description": "Alissa & Eric's Wedding Site",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Eric Sauer",
+  "license": "ISC"
+}

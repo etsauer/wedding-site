@@ -1,0 +1,10 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+  {% include "partials/header.nunjucks" %}
+    <!-- You write code for this content block in another file -->
+    {% block content %} {% endblock %}
+
+  {% include "partials/footer.nunjucks" %}
+  </body>
+</html>

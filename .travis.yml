@@ -1,4 +1,8 @@
 language: node_js
+node_js:
+- "11.6.0"
+npm:
+- "6.5.0"
 install:
 - mkdir -p app
 - rm -rf app || exit 0

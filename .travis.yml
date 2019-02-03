@@ -4,8 +4,8 @@ addons:
     packages:
     - python-pygments
 install:
-- mkdir -p public
-- rm -rf public || exit 0
+- mkdir -p app
+- rm -rf app || exit 0
 before_script:
 - npm install -g gulp-cli
 - npm install
@@ -15,11 +15,9 @@ deploy:
   provider: s3
   access_key_id: AKIAIANSYJK7WISZBXSA
   secret_access_key:
-    secure: hS0pZpj3FK8cnxYywC85pDt7qr6e/LNd0gL+Ii0mF3yP8c5VVfTqSb23uKYpVuwaYXxl5Z2xuhBTjx9JDFVJ4bypdaVB3TwpGqNc97UvA/zJ9n33pqFr6NlildkV0GZVrfb/TAuUXUsYQ4Wt3LgEFMxg4xaRBOlz+tjvCMsYpe0HTeIkV6ofw3RdTj+mWBfuMfgQP206ZXMdOIbAbK/xZengHSSAEghvOEn1QzakbLiP6Z89HFFf6ibWb51L4hDPBw3HsJ3BYSMW4t1WESotkO8yTpOzx0y535KOLhyOxkan6dj4kMmStYLf7LLgZU5t+PmOb7SWSC3FZWnV4tmvUJk1YBdINtbpOKgg9kXXacjNQQZbRehmis8R7RnP223cc+PgSb+XUvPt6CyIta5bymyNEqWWPPxA9Ney5VSuzQm4u9va66zqblCC9MaEYA8dzkrXnBiceMCCDrEpNoVDqS/Alk5e5AEKR/UQBttkgtD0mZ2WqZCYoCa0s4vXXPjOyDH4RnvsA3oQ6/vj0XOi3O5jgZ36O7g+3qXDuhOzT/Zr6liOXalLko9e5UQP9XxxuhQr5hGnmLYwTU6PDzREmi/pvxyC3Xv+hts/fHggSKu7vj+NjHeA1LA5cekITqyR/cCYTx35sajaeMo1MoK4xO1aPGb3iVdhsKK0iN4M4r8=
-  bucket: sauerwedding2019
-  region: us-east-2
-  local-dir: public
+    secure: aolSodAp0i6RTBGpleR2ZZ/lWSfh/bd/T5xAr4R+fkX3+BUX5T4bRi2zgcXvO6DY1aGVwFJfzdISV3fZDFzgl4LeAttqrUSqIz0YJ51lr4CIRsJm5FgLz68h2WUDe5x3PchHraHV9z5yMDJ4zGeCHERsw/yAqi+PyY56WL2k/ZQzDO1fnzqc7zA8d4uT1KTt076tb/XQ3tw23A1MDPRrqg8buFjRocKjf4Suxwfiwl0KfahLOgAqbDywb57An40EePUSvY1A25Gmp18R3+S2w51LGZYF4NUSssdaEO+nhcFd/nyFo1Wq9SGl0LW060hYkJJtl7j4+UeG3tvQc7atqh93KdS2fgSZZykSrDVB382o1zIrkbRSqQ0TGvZHfBF9szae42zOF4rkqrgm0MujdXxEATdM7//hjlyZ8itR72J5mie3mrbsUZSfUQNB9LejPOo2kw5dL6IMSO0ASkgNydWP2h5WYtSIhLXEWd3aIK6D/3qx7fdwN3sTUqbJbQk6sfmllO2Q5jnBN6CLx2u3I5Uac4jRPM2ktRD+TiGrN6oZ/sOyTB13cMjazGYcN7nvI+ywOxASoDRLwoazugkL74ya+WLIY92kU73rc818NQRH9kXVTlqRiwWUHVEJYRTTnZwrQijin4rxZFRoXqn+aexAsaagE//51tseckcj+Dk=
+  bucket: sauerwedding2019.com
+  local-dir: app
   acl: public_read
   on:
     repo: etsauer/wedding-site
-  skip_cleanup: true

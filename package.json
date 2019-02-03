@@ -12,6 +12,7 @@
     "gulp-sass": "^4.0.2"
   },
   "scripts": {
+    "build": "gulp build",
     "test": "test"
   },
   "author": "Eric Sauer",

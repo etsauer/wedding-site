@@ -1,8 +1,4 @@
 language: node_js
-addons:
-  apt:
-    packages:
-    - python-pygments
 install:
 - mkdir -p app
 - rm -rf app || exit 0
@@ -10,7 +6,7 @@ before_script:
 - npm install -g gulp-cli
 - npm install
 script:
-- npm build
+- npm run build
 deploy:
   provider: s3
   access_key_id: AKIAIANSYJK7WISZBXSA

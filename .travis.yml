@@ -1,13 +1,16 @@
+language: node_js
 addons:
   apt:
     packages:
     - python-pygments
 install:
-- gem install asciidoctor
 - mkdir -p public
 - rm -rf public || exit 0
+before_script:
+- npm install -g gulp-cli
+- npm install
 script:
-- bin/hugo
+- npm build
 deploy:
   provider: s3
   access_key_id: AKIAIANSYJK7WISZBXSA

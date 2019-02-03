@@ -17,6 +17,7 @@ deploy:
   secret_access_key:
     secure: aolSodAp0i6RTBGpleR2ZZ/lWSfh/bd/T5xAr4R+fkX3+BUX5T4bRi2zgcXvO6DY1aGVwFJfzdISV3fZDFzgl4LeAttqrUSqIz0YJ51lr4CIRsJm5FgLz68h2WUDe5x3PchHraHV9z5yMDJ4zGeCHERsw/yAqi+PyY56WL2k/ZQzDO1fnzqc7zA8d4uT1KTt076tb/XQ3tw23A1MDPRrqg8buFjRocKjf4Suxwfiwl0KfahLOgAqbDywb57An40EePUSvY1A25Gmp18R3+S2w51LGZYF4NUSssdaEO+nhcFd/nyFo1Wq9SGl0LW060hYkJJtl7j4+UeG3tvQc7atqh93KdS2fgSZZykSrDVB382o1zIrkbRSqQ0TGvZHfBF9szae42zOF4rkqrgm0MujdXxEATdM7//hjlyZ8itR72J5mie3mrbsUZSfUQNB9LejPOo2kw5dL6IMSO0ASkgNydWP2h5WYtSIhLXEWd3aIK6D/3qx7fdwN3sTUqbJbQk6sfmllO2Q5jnBN6CLx2u3I5Uac4jRPM2ktRD+TiGrN6oZ/sOyTB13cMjazGYcN7nvI+ywOxASoDRLwoazugkL74ya+WLIY92kU73rc818NQRH9kXVTlqRiwWUHVEJYRTTnZwrQijin4rxZFRoXqn+aexAsaagE//51tseckcj+Dk=
   bucket: sauerwedding2019.com
+  region: us-east-2
   local-dir: app
   acl: public_read
   on:

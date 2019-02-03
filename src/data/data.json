@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "src": "images/engagement-cheers.jpg",
+      "alt": "Gallery Image 3"
+    }, {
+      "src": "images/gallery-1-600x400.jpg",
+      "alt": "Gallery Image"
+    }, {
+      "src": "images/gallery-2-600x400.jpg",
+      "alt": "Gallery Image"
+    }
+  ],
+  "contact": {
+    "email": "cha",
+    "phone": "704-299-8294"
+  },
+  "logistics": {
+    "date": "30 August 2019",
+    "venue": "The Merrimon-Wynne House",
+    "address": "500 North Blount Street",
+    "address_2": "RALEIGH, NC 27604"
+  }
+}

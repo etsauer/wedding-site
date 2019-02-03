@@ -2,7 +2,7 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-  <div class="main-slider">
+  <div class="main-slider home-slider">
     <div class="display-table center-text">
       <div class="display-table-cell">
         <div class="slider-content">
@@ -172,8 +172,9 @@
 						<div class="margin-bottom">
 							<p>On the 25 September 2017</p>
 							<p>Join us as we celebrate life and love.</p>
-							<h4><a href="tel:784-412-0646" class="phone">784-412-0646</a></h4>
-							<p>14 Baria street 133/2, New York City, US</p>
+							<h4><a href="tel:{{contact.phone}}" class="phone">{{contact.phone}}</a></h4>
+              <p>{{logistics.venue}}</p>
+							<p>{{logistics.address}}, {{logistics.address_2}}</p>
 
 						</div><!-- margin-bottom -->
 					</div><!-- col-sm-10 -->

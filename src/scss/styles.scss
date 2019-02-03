@@ -266,11 +266,28 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 /*.main-slider{ height: 100vh; position: relative; z-index: 1;
 	background-image: url(/images/slider-1-1600x900.jpg); background-size: cover; color: #fff; } */
-.main-slider{ height: 100vh; position: relative; z-index: 1;
-		background-image: url(/images/engagement-cheers.jpg); background-size: cover; color: #fff; }
+.main-slider{
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  color: #fff; }
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0;
 	z-index: -1; background: rgba(0,0,0,.3); }
+
+.home-slider {
+  height: 100vh;
+  background-image: url(/images/engagement-cheers.jpg);
+}
+
+.regular-slider {
+  height: 500px;
+  background-image: url(/images/counter-1-1600x600.jpg);
+}
+
+.regular-slider .slider-content .title {
+    margin-bottom: 20px;
+}
 
 .slider-content .date{ margin: 10px 0 0; }
 
@@ -373,7 +390,39 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .galery-area .gallery-btn{ margin-top: 30px; }
 
+/* ----------------------------------
+11. REGULAR AREA
+-----------------------------------*/
+.regular-area {
+    padding: 0 0 100px 0;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
 
+.regular-area .content {
+    padding: 40px 70px;
+    box-shadow: 2px 10px 20px rgba(0,0,0,.2);
+    background: #fff;
+}
+
+.content {
+  .img-wrapper {
+      margin: 30px 0;
+  }
+  .margin-top-btm {
+      margin: 20px 0;
+  }
+  .quoto-area {
+      position: relative;
+      padding-left: 50px;
+  }
+  ul li {
+      display: list-item;
+      margin: 10px 0 10px 30px;
+      list-style: circle;
+  }
+}
 
 /* ---------------------------------
 11. FOOTER

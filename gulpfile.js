@@ -32,7 +32,7 @@ gulp.task('nunjucks', function() {
   return gulp.src('src/pages/**/*.+(html|njk)')
   // Adding data
   .pipe(data(function() {
-    return require('./src/data/gallery.json')
+    return require('./src/data/data.json')
   }))
   // Renders template with nunjucks
   .pipe(nunjucksRender({
@@ -40,6 +40,9 @@ gulp.task('nunjucks', function() {
     }))
   // output files in app folder
   .pipe(gulp.dest('app'))
+  .pipe(browserSync.reload({
+    stream: true
+  }));
 });
 
 gulp.task('sass', function() {
@@ -48,12 +51,15 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('static', function() {
   gulp.src(configuration.paths.src.static)
-    .pipe(gulp.dest(configuration.paths.dest));
+    .pipe(gulp.dest(configuration.paths.dest))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('watch', gulp.parallel( 'sass', 'static', 'nunjucks', 'browserSync', function(){

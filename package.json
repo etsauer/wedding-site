@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "gulp build",
-    "test": "test"
+    "test": "test",
+    "start": "gulp start"
   },
   "author": "Eric Sauer",
   "license": "ISC"

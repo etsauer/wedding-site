@@ -8,9 +8,10 @@
         <div class="slider-content">
 
           <i class="small-icon icon icon-tie"></i>
-          <h5 class="date">30 AUGUST 2019</h5>
-          <h3 class="pre-title">Save The Date</h3>
+          <h3 class="pre-title">Save the Date</h3>
           <h1 class="title">Alissa <i class="icon icon-heart"></i> Eric</h1>
+          <h5 class="date">{{logistics.date}}</h5>
+          <h5>{{logistics.address_2_short}}</h5>
 
         </div><!-- slider-content-->
       </div><!--display-table-cell-->
@@ -170,9 +171,7 @@
 						</div>
 
 						<div class="margin-bottom">
-							<p>On the 25 September 2017</p>
-							<p>Join us as we celebrate life and love.</p>
-							<h4><a href="tel:{{contact.phone}}" class="phone">{{contact.phone}}</a></h4>
+							<h4>Questions? Contact Alissa at <a href="tel:{{contact.phone}}" class="phone">{{contact.phone}}</a> or {{contact.email}}</h4>
               <p>{{logistics.venue}}</p>
 							<p>{{logistics.address}}, {{logistics.address_2}}</p>
 

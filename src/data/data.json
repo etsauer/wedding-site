@@ -12,13 +12,14 @@
     }
   ],
   "contact": {
-    "email": "cha",
+    "email": "chambers.sauer@gmail.com",
     "phone": "704-299-8294"
   },
   "logistics": {
-    "date": "30 August 2019",
+    "date": "August 30, 2019",
     "venue": "The Merrimon-Wynne House",
     "address": "500 North Blount Street",
-    "address_2": "RALEIGH, NC 27604"
+    "address_2": "RALEIGH, NC 27604",
+    "address_2_short": "RALEIGH, NC"
   }
 }

@@ -1,0 +1,43 @@
+<!-- gallery.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="main-slider regular-slider">
+    <div class="display-table center-text">
+      <div class="display-table-cell">
+        <div class="slider-content">
+
+          <h1 class="title">Our Gallery</h1>
+
+        </div><!-- slider-content-->
+      </div><!--display-table-cell-->
+    </div><!-- display-table-->
+  </div><!-- main-slider -->
+
+  <section class="regular-area gallery-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+
+					<div class="content">
+
+            <div class="image-gallery">
+              <div class="row">
+              {% for image in images %}
+                <div class="col-md-4 col-sm-6">
+                  <a href="{{image.src}}" data-fluidbox><img class="margin-bottom" src="{{image.src}}" alt="{{image.alt}}"></a>
+                </div><!-- col-sm-4 -->
+              {% endfor %}
+  						</div><!-- row -->
+
+  						<a class="btn-2 margin-bottom gallery-btn" href="#">VIEW ALL GALLERY</a>
+
+  					</div><!-- image-gallery -->
+
+          </div><!-- end content -->
+
+        </div><!-- end col -->
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </section><!-- end regular area -->
+{% endblock %}

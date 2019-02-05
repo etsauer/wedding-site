@@ -171,13 +171,15 @@
           <div class="image-gallery">
             <div class="row">
             {% for image in images %}
+              {% if image.featured %}
               <div class="col-md-4 col-sm-6">
                 <a href="{{image.src}}" data-fluidbox><img class="margin-bottom" src="{{image.src}}" alt="{{image.alt}}"></a>
               </div><!-- col-sm-4 -->
+              {% endif %}
             {% endfor %}
 						</div><!-- row -->
 
-						<a class="btn-2 margin-bottom gallery-btn" href="#">VIEW ALL GALLERY</a>
+						<a class="btn-2 margin-bottom gallery-btn" href="/gallery.html">VIEW ALL GALLERY</a>
 
 					</div><!-- image-gallery -->
 

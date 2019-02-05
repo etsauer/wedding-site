@@ -2,13 +2,19 @@
   "images": [
     {
       "src": "images/engagement-cheers.jpg",
-      "alt": "Gallery Image 3"
+      "alt": "Gallery Image 3",
+      "featured": "true"
     }, {
       "src": "images/gallery-1-600x400.jpg",
-      "alt": "Gallery Image"
+      "alt": "Gallery Image",
+      "featured": "true"
     }, {
       "src": "images/gallery-2-600x400.jpg",
       "alt": "Gallery Image"
+    }, {
+      "src": "/images/eric_alissa_20170928.jpg",
+      "alt": "Alissa and Eric at a fancy party (don't remember what)",
+      "featured": "true"
     }
   ],
   "contact": {

@@ -52,10 +52,8 @@ function countdownTime(){
 	if(isExists('#clock')){
 		$('#clock').countdown('2019/08/30', function(event){
 			var $this = $(this).html(event.strftime(''
-				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
-				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
-				+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
-				+ '<div class="time-sec"><span class="title">%S</span> seconds </div>'));
+				+ '<div class="time-sec"><span class="title">%D</span> days to go!</div>'
+      ));
 		});
 	}
 }

@@ -2,21 +2,11 @@
   <div class="container center-text">
 
     <div class="logo-wrapper">
-      <a class="logo" href="#"><img src="/images/logo-black.png" alt="Logo Image"></a>
       <i class="icon icon-star"></i>
     </div>
 
-    <ul class="social-icons">
-      <li><a href="#"><i class="icon icon-heart"></i></a></li>
-      <li><a href="#"><i class="icon icon-instagram"></i></a></li>
-      <li><a href="#"><i class="icon icon-tripadvisor"></i></a></li>
-    </ul>
-
     <ul class="footer-links">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="story.html">OUR STORY</a></li>
-      <li><a href="details.html">THE WEDDING</a></li>
-      <li><a href="#">GALLERY</a></li>
+      {% include "partials/links.nunjucks" %}
     </ul>
 
     <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

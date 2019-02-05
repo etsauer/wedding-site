@@ -28,15 +28,10 @@
 
 		<div class="container">
 
-			<a class="logo" href="#"><img src="images/logo-white.png" alt="Logo"></a>
-
 			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
 
 			<ul class="main-menu visible-on-click" id="main-menu">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="story.html">OUR STORY</a></li>
-				<li><a href="details.html">THE WEDDING</a></li>
-				<li><a href="gallery">GALLERY</a></li>
+				{% include "partials/links.nunjucks" %}
 			</ul><!-- main-menu -->
 
 		</div><!-- container -->

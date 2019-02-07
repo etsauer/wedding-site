@@ -82,4 +82,3 @@ function complete(cb) {
 
 exports.build = series(static, compileCss, nunjucks, complete)
 exports.start = parallel(startBrowser, watchSass, watchSass, watchNunjucks, watchSite)
-exports.watch = watchTest

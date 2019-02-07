@@ -1,6 +1,7 @@
 var browserSync = require('browser-sync').create();
 var data = require('gulp-data');
 var gulp = require('gulp');
+var watch = require('gulp-watch')
 var nunjucksRender = require('gulp-nunjucks-render');
 var sass = require('gulp-sass');
 const { series, parallel } = require('gulp');
@@ -23,7 +24,7 @@ var configuration = {
 function startBrowser() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: configuration.paths.dest
     }
   });
 }
@@ -54,14 +55,25 @@ function static() {
     .pipe(gulp.dest(configuration.paths.dest))
 }
 
-function watch() {
-  gulp.watch('src/scss/**/*.scss', gulp.series(compileCss, browserSync.reload));
-  gulp.watch('src/pages/**/*.+(html|njk)', gulp.series(nunjucks, browserSync.reload));
-  gulp.watch('src/templates/**/*.nunjucks', gulp.series(nunjucks, browserSync.reload));
-  gulp.watch('src/data/*.json', gulp.series(nunjucks, browserSync.reload));
-  gulp.watch('src/static/**/*', gulp.series(static, browserSync.reload));
-  // Reloads the browser whenever HTML or JS files change
-  gulp.watch('app/**/*', browserSync.reload);
+function watchSass() {
+  return watch('src/scss/**/*.scss', compileCss);
+}
+
+function watchStatic() {
+  return watch('src/static/**/*', static);
+}
+
+function watchNunjucks() {
+  return watch([
+    'src/pages/**/*.+(html|njk)',
+    'src/templates/**/*.nunjucks',
+    'src/data/*.json'
+  ], nunjucks);
+}
+
+// Reloads the browser whenever HTML or JS files change
+function watchSite() {
+  watch('./app/**', browserSync.reload);
 }
 
 function complete(cb) {
@@ -69,4 +81,5 @@ function complete(cb) {
 }
 
 exports.build = series(static, compileCss, nunjucks, complete)
-exports.start = parallel(compileCss, static, nunjucks, startBrowser, watch)
+exports.start = parallel(startBrowser, watchSass, watchSass, watchNunjucks, watchSite)
+exports.watch = watchTest

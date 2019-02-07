@@ -27,7 +27,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <script src="/js/jquery.countdown.min.js"></script>
 
-<script src="/js/jquery.fluidbox.min.js"></script>
+<script src="/js/jquery.ba-throttle-debounce.min.js"></script>
 
+<script src="/js/jquery.fluidbox.min.js"></script>
 
 <script src="/js/scripts.js"></script>

@@ -406,6 +406,10 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
         padding: 40px 70px;
         box-shadow: 2px 10px 20px rgba(0,0,0,.2);
         background: #fff;
+        a {
+          color: $secondary-color;
+          text-decoration: underline;
+        }
         ul li {
             display: list-item;
             margin: 10px 0 10px 30px;

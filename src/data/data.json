@@ -1,7 +1,7 @@
 {
   "images": [
     {
-      "src": "images/engagement-cheers.jpg",
+      "src": "images/engagement_day.jpg",
       "alt": "New Title",
       "featured": "true"
     }, {
@@ -14,6 +14,9 @@
     }, {
       "src": "/images/eric_alissa_20150502.jpg",
       "alt": "Aliss has short hair!"
+    }, {
+      "src": "/images/eric_alissa_lindsayswedding.jpg",
+      "alt": "In Murphy, NC at Lindsay and Clay's Wedding"
     }
   ],
   "contact": {

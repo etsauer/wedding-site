@@ -73,7 +73,7 @@ function watchNunjucks() {
 
 // Reloads the browser whenever HTML or JS files change
 function watchSite() {
-  watch('./app/**', browserSync.reload);
+  watch('app/**', browserSync.reload);
 }
 
 function complete(cb) {

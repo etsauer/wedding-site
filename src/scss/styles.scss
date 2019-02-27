@@ -393,6 +393,18 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 --------------------------------- */
 
 .gallery-area {
+  .row {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: wrap;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    .gallery-image {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
 }
 
 /* ----------------------------------

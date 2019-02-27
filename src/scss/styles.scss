@@ -282,7 +282,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .home-slider {
   height: 100vh;
   background-image: url(/images/engagement-cheers.jpg);
-}
+  background-size: cover;
+  background-position: center, center;}
 
 .regular-slider {
   height: 300px;

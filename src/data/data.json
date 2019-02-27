@@ -2,21 +2,31 @@
   "images": [
     {
       "src": "images/engagement_day.jpg",
-      "alt": "New Title",
-      "featured": "true"
+      "alt": "Engagement Day"
+    }, {
+      "src": "/images/sanfran.jpg",
+      "alt": "San Francisco"
+    }, {
+      "src": "/images/eric_alissa_20150502_v2.jpg",
+      "alt": "Anniversary at WOB"
+    }, {
+      "src": "/images/hammock.jpg",
+      "alt": "Back yard hammock"
     }, {
       "src": "/images/eric_alissa_20150214.jpg",
-      "alt": "We're on a hike!"
+      "alt": "Conservators Center"
     }, {
-      "src": "/images/eric_alissa_20170928.jpg",
-      "alt": "Alissa and Eric at a fancy party (don't remember what)",
-      "featured": "true"
-    }, {
-      "src": "/images/eric_alissa_20150502.jpg",
-      "alt": "Aliss has short hair!"
+      "src": "/images/baseball.jpg",
+      "alt": "Durham Bulls"
     }, {
       "src": "/images/eric_alissa_lindsayswedding.jpg",
       "alt": "In Murphy, NC at Lindsay and Clay's Wedding"
+    }, {
+      "src": "/images/20170928_212915_v2.jpg",
+      "alt": "Nicole and Josh's wedding"
+    }, {
+      "src": "/images/aruba.jpg",
+      "alt": "Aruba"
     }
   ],
   "contact": {
